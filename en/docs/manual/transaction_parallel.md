@@ -1,6 +1,6 @@
-# Parallel transaction
+# Parallel contract
 
-FISCO BCOS provides development structure for parallelable contract. Contract developed under the structure regulation can be parallelly executed by nodes of FISCO BCOS. The advantages of parallel contract include:
+FISCO BCOS provides development structure for parallel contract. Contract developed under the structure regulation can be parallelly executed by nodes of FISCO BCOS. The advantages of parallel contract include:
 
 - high TPS: multiple independent transaction being executed at the same time can utilize the CPU resources to the most extent and reach high TPS
 
@@ -40,7 +40,7 @@ So far, FISCO BCOS offers two types of parallel contract development structure: 
 
 ### Solidity development structure
 
-Parallel solidity contract shares the same development process with [regular solidity contract](./smart_contract.html#id1): make ``` ParallelContract ``` as the base class of the parallel contract and call ``` registerParallelFunction() ``` to register the interface.
+Parallel solidity contract shares the same development process with [regular solidity contract](./smart_contract.html#id1): make [``` ParallelContract ```](https://github.com/FISCO-BCOS/web3sdk/blob/master/src/test/resources/contract/ParallelContract.sol) as the base class of the parallel contract and call ``` registerParallelFunction() ``` to register the interface.
 
 Here is a complete example of how ParallelOk contract realize parallel payment transfer
 
