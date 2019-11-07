@@ -266,7 +266,7 @@ tail -f ~/mynode/log/log*  | grep +++
 
 当整条链的证书均已过期时，需要从新对整条链的证书进行续期操作，续期证书的OpenSSL命令与节点续期操作基本相同，或查阅`build_chain.sh`脚本签发证书的操作，简要步骤如下：
 
-- 使用链私钥`ca.key`从新签发链证书`ca.crt`
+- 使用链私钥`ca.key`重新签发链证书`ca.crt`
 - 使用机构证书`agency.key`生成证书请求文件`agency.csr`
 - 使用链私钥`ca.key`对证书请求文件`agency.csr`签发得到机构证书`agency.crt`
 - 使用节点`node.key`生成证书请求文件`node.csr`
